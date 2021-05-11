@@ -92,7 +92,7 @@ namespace GenshinImpactTool
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ActivarBoton(sender, RGBColors.color2);
+            //ActivarBoton(sender, RGBColors.color2);
             OpenChildForm(new frmPersonajes());
         }
 
