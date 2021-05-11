@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19C1035B-5F30-476E-B275-5DF5E6A441C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GenshinImpactTool</RootNamespace>
+    <AssemblyName>GenshinImpactTool</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.5.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonajes.Designer.cs">
+      <DependentUpon>frmPersonajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPersonajes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListaPersonajes.Designer.cs">
+      <DependentUpon>ListaPersonajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Character.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleCharacter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleCharacter.Designer.cs">
+      <DependentUpon>ScheduleCharacter.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonajes.resx">
+      <DependentUpon>frmPersonajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPersonajes.resx">
+      <DependentUpon>ListaPersonajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleCharacter.resx">
+      <DependentUpon>ScheduleCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keqing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sucrose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Albedo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Amber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ballad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barbara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beidou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bennett.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chongyun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diligence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diluc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fischl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Freedom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ganyu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hu Tao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaeya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keching.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Klee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ningguang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prosperity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qiqi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Razor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resistance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rosaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sacarosa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tartaglia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traveler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xiangling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xiao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xingqiu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xinyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yanfei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zhongli.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>

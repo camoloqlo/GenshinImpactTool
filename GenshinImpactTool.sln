@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenshinImpactTool", "GenshinImpactTool\GenshinImpactTool.csproj", "{19C1035B-5F30-476E-B275-5DF5E6A441C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19C1035B-5F30-476E-B275-5DF5E6A441C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C1035B-5F30-476E-B275-5DF5E6A441C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C1035B-5F30-476E-B275-5DF5E6A441C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C1035B-5F30-476E-B275-5DF5E6A441C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B5C1D00-181D-4ACC-AEFA-FC1E491ED515}
+	EndGlobalSection
+EndGlobal
