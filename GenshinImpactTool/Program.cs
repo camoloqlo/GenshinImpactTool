@@ -11,9 +11,11 @@ namespace GenshinImpactTool
         [STAThread]
         static void Main()
         {
+            AppDomain.CurrentDomain.SetData("APP_CONFIG_FILE", System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"/genshintool.config");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            
         }
     }
 }

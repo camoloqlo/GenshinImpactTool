@@ -15,6 +15,7 @@ namespace GenshinImpactTool
         public frmDashboard()
         {
             InitializeComponent();
+            
             loadResin();
             loadSchedule(ci.DateTimeFormat.GetDayName(DateTime.Now.AddHours(-4).DayOfWeek));
         }
@@ -35,6 +36,7 @@ namespace GenshinImpactTool
 
         private void loadResin()
         {
+           
             DateTime FechaHoraInicio = DateTime.Parse(config.AppSettings.Settings["timeSetResin"].Value);
             TimeSpan diferencia = DateTime.Now - FechaHoraInicio;
             var diferenciaenminutos = diferencia.TotalMinutes;
@@ -63,7 +65,7 @@ namespace GenshinImpactTool
 
             if (minutos > 0)
             {
-                lbResinInfo.Text = "Resina al maximo aproximadamente el " + FechaHoraInicio.AddHours(hor).AddMinutes(min).Date.Day + " de " + FechaHoraInicio.AddHours(hor).AddMinutes(min).ToString("MMMM") + " a las " + FechaHoraInicio.AddHours(hor).AddMinutes(min).ToString("HH:mm") + " (" + (hor < 10 ? "0" + hor : hor + "") + " hora(s) y " + (min < 10 ? "0" + min : min + "") + " minuto(s))";
+                lbResinInfo.Text = "Resina al maximo aproximadamente el " + FechaHoraInicio.AddHours(hor).AddMinutes(min).Date.Day + " de " + FechaHoraInicio.AddHours(hor).AddMinutes(min).ToString("MMMM") + " a las " + DateTime.Now.AddHours(hor).AddMinutes(min).ToString("HH:mm") + " (" + (hor < 10 ? "0" + hor : hor + "") + " hora(s) y " + (min < 10 ? "0" + min : min + "") + " minuto(s))";
             }
             else
             {
