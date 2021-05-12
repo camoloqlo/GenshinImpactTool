@@ -144,8 +144,9 @@ namespace GenshinImpactTool
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Genshin Impact Tool";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
